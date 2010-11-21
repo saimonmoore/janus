@@ -10,6 +10,7 @@ Customizations:
     * Gist
     * Scratch
     * Matchit
+    * Lusty Juggler
 
 * Added following mappings:
     * nmap <Leader>b :LustyJuggler<CR>
