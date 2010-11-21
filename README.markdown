@@ -19,6 +19,7 @@ Customizations:
     * nmap <Leader>c <plug>NERDCommenterToggle<CR>
     * nmap <Leader>rt :!ctags --extra=+f -R *<CR><CR>
     * nmap <Leader>m :TlistToggle<CR>
+    * nmap <Leader>gs :Gstatus<CR>
 
 ## Pre-requisites
 
