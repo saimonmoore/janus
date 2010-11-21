@@ -1,0 +1,47 @@
+let mapleader = ","
+
+" mappings
+nmap <Leader>b :LustyJuggler<CR>
+nmap <Leader>n :NERDTreeToggle<CR>
+nmap <Leader>z :ZoomWin<CR>
+nmap <Leader>c <plug>NERDCommenterToggle<CR>
+nmap <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+nmap <Leader>m :TlistToggle<CR>
+
+" Custom functions
+
+" Toggle Scratch pad
+function! ToggleScratch()
+  if expand('%') == g:ScratchBufferName
+      quit
+  else
+      Sscratch
+  endif
+endfunction
+
+map <leader>s :call ToggleScratch()<CR>
+
+" word swapping functions
+"
+" To use gw to swap the current word with the next, without changing cursor position: (See note.)
+:nnoremap <silent> gw "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>
+" To use gl to swap the current word with the previous, keeping cursor on
+" current word: (This feels like "pushing" the word to the left.)
+:nnoremap <silent> gl "_yiw?\w\+\_W\+\%#<CR>:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>
+
+" To use gr to swap the current word with the next, keeping cursor on current word: (This feels like "pushing" the word to the right.)
+:nnoremap <silent> gr "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o>/\w\+\_W\+<CR><c-l>
+
+" To use g{ to swap the current paragraph with the next:
+:nnoremap g{ {dap}p{
+
+" To use gc to swap the current character with the next, without changing the cursor position:
+:nnoremap <silent> gc xph
+
+" gist plugin
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
+let g:gist_open_browser_after_post = 1
+let g:gist_show_privates = 1
+
+

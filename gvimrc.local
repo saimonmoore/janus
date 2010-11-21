@@ -1,0 +1,17 @@
+
+if has("gui_macvim")
+  set guioptions=aAce
+
+  set guifont=Monaco:h15
+
+  " automatically enter full screen mode
+  "au GUIEnter * set fullscreen
+
+  " toggle fullscreen mode
+  map <D-+> :set invfu<CR> 
+endif
+
+" Default gui color scheme
+color molokai
+"color vibrantink
+
