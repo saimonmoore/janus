@@ -72,3 +72,7 @@ let g:gist_show_privates = 1
 
 set shell=/bin/bash
 
+" get rid of swp files
+set backupdir=~/.backup
+set directory=~/.backup
+
