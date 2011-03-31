@@ -76,3 +76,6 @@ set shell=/bin/bash
 set backupdir=~/.backup
 set directory=~/.backup
 
+" abbreviations
+abbr W w
+abbr Wq wq
