@@ -61,6 +61,9 @@ endfunction
 " To use gc to swap the current character with the next, without changing the cursor position:
 :nnoremap <silent> gc xph
 
+" F2 to format xml
+map <F2> <Esc>:1,$!xmllint --format -<CR>
+
 " gist plugin
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
