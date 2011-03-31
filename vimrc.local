@@ -9,6 +9,10 @@ nmap <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 nmap <Leader>m :TlistToggle<CR>
 nmap <Leader>gs :Gstatus<CR>
 
+"LustJuggler
+let g:LustyJugglerAltTabMode = 1
+noremap <silent> <A-s> :LustyJuggler<CR>
+
 " Custom functions
 
 " Toggle Scratch pad
