@@ -1,7 +1,6 @@
 vim_plugin_task "matchit",          "http://www.vim.org/scripts/download_script.php?src_id=8196"
 vim_plugin_task "cecutil",          "http://www.vim.org/scripts/download_script.php?src_id=7618"
 vim_plugin_task "align",            "http://www.vim.org/scripts/download_script.php?src_id=10110"
-vim_plugin_task "zoomwin",          "https://github.com/vim-scripts/ZoomWin.git"
 vim_plugin_task "autoclose",        "https://github.com/Townk/vim-autoclose.git"
 vim_plugin_task "scratch",          "https://github.com/duff/vim-scratch.git"
 vim_plugin_task "watchit",          "http://www.vim.org/scripts/download_script.php?src_id=8196"
