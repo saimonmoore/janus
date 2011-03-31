@@ -26,6 +26,24 @@ endfunction
 
 map <leader>s :call ToggleScratch()<CR>
 
+" sum column of numbers in yanked register, save
+" result to " register
+function! Sum()
+python << EOF
+import vim
+
+# find total from input
+items = vim.eval("@0").split("\n")
+floatsList = map(float, filter(lambda n: n != '', items))
+total = sum(floatsList)
+
+# set register and echo result
+vim.command("call setreg('\"', '%s\n')" % total)
+vim.command("echo '%s saved to clipboard'" % total)
+EOF
+endfunction
+
+
 " word swapping functions
 "
 " To use gw to swap the current word with the next, without changing cursor position: (See note.)
