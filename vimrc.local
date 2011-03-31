@@ -1,7 +1,8 @@
 let mapleader = ","
 
 " mappings
-nmap <Leader>b :LustyJuggler<CR>
+nmap <Leader>b :CommandTBuffer<CR>
+nmap <Leader>j :LustyJuggler<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>z :ZoomWin<CR>
 nmap <Leader>c <plug>NERDCommenterToggle<CR>
