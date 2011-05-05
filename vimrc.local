@@ -3,7 +3,6 @@ let mapleader = ","
 " mappings
 nmap <Leader><Leader> :CommandT<CR>
 nmap <Leader>. :CommandTBuffer<CR>
-nmap <Leader>j :LustyJuggler<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>z :ZoomWin<CR>
 nmap <Leader>c <plug>NERDCommenterToggle<CR>
@@ -11,9 +10,6 @@ nmap <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 nmap <Leader>m :TlistToggle<CR>
 nmap <Leader>gs :Gstatus<CR>
 
-"LustJuggler
-let g:LustyJugglerAltTabMode = 1
-noremap <silent> <A-s> :LustyJuggler<CR>
 
 " Custom functions
 
