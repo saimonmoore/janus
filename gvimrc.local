@@ -15,3 +15,4 @@ endif
 color molokai
 "color vibrantink
 
+set vb t_vb=
