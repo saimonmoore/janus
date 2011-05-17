@@ -4,4 +4,5 @@ vim_plugin_task "align",            "http://www.vim.org/scripts/download_script.
 vim_plugin_task "autoclose",        "https://github.com/Townk/vim-autoclose.git"
 vim_plugin_task "scratch",          "https://github.com/duff/vim-scratch.git"
 vim_plugin_task "watchit",          "http://www.vim.org/scripts/download_script.php?src_id=8196"
-vim_plugin_task "vim-easymotion",    "https://github.com/Lokaltog/vim-easymotion.git"
+vim_plugin_task "vim-easymotion",   "https://github.com/Lokaltog/vim-easymotion.git"
+vim_plugin_task "jshint",           "https://github.com/walm/jshint.vim.git"
