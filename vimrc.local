@@ -85,3 +85,7 @@ set undofile
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
+"adding mapping for rabl files
+au BufRead,BufNewFile *.rabl setf ruby
+"adding mapping for jade.erb files
+autocmd BufNewFile,BufReadPost *.jade.erb set filetype=jade
