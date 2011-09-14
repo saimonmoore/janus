@@ -23,6 +23,7 @@ function! ToggleScratch()
 endfunction
 
 map <leader>s :call ToggleScratch()<CR>
+map <leader>jt <Esc>:%!python -m json.tool<CR>
 
 " sum column of numbers in yanked register, save
 " result to " register
